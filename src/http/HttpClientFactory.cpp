@@ -8,6 +8,8 @@
 #include "http/AppleHttpClient.h"
 #elif defined(HAS_CURL)
 #include "http/CurlHttpClient.h"
+#else
+#include <stdexcept>
 #endif
 
 using namespace Framework::Http;
